@@ -1,0 +1,61 @@
+[core]
+	mergeoptions = --no-commit --no-ff
+	autocrlf = true
+	excludesfile = C:\\Users\\thowinter\\Documents\\gitignore_global.txt
+[user]
+	name = Thomas Winter
+	email = thomas89winter@gmail.com
+[apply]
+	whitespace = nowarn
+[color]
+	ui = true
+[merge]
+	conflictstyle = diff3
+[rerere]
+	enabled = 1
+[diff]
+	algorithm = patience
+[alias]
+    grrraaa = push
+    a = add
+    aa = add -A :/
+    aacm = "!sh -c 'git add -A :/;git commit -m \"$1\"' -"
+    aaca = "!sh -c 'git add -A :/;git commit --amend' -"
+    aacan = "!sh -c 'git add -A :/;git commit --amend --no-edit' -"
+    aas = "!sh -c 'git add -A :/;git stash' -"
+    ap = add -p
+    b = branch
+    c = commit
+    ca = commit --amend
+    can = commit --amend --no-edit
+    ch = checkout
+    cm = commit -m
+    cp = cherry-pick
+    cpc = cherry-pick --continue
+    d = diff
+    dc = diff --cached
+    f = fetch
+    l = log
+    ll = log -1
+    p = push
+    pf = push --force-with-lease
+    pr = pull --rebase
+    pt = push --tags
+    pu = pull
+    r = rebase
+    ra = rebase --abort
+    rc = rebase --continue
+    rs = rebase --skip
+    s = stash
+    sa = "!sh -c 'git stash apply stash@{$1}' -"
+    sd = "!sh -c 'git stash drop stash@{$1}' -"
+    sl = stash list
+    sp = stash pop
+    spr = "!sh -c 'git stash pop;git reset;git status' -"
+    ss = stash show
+    st = status
+    t = tag
+    ta = tag -a
+    td = tag -d
+	g = git
+
