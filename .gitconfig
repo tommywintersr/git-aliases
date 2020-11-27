@@ -1,10 +1,10 @@
 [core]
 	mergeoptions = --no-commit --no-ff
 	autocrlf = true
-	excludesfile = C:\\Users\\thowinter\\Documents\\gitignore_global.txt
+	excludesfile = [path/to/gitignore_global.txt]
 [user]
-	name = Thomas Winter
-	email = thomas89winter@gmail.com
+	name = [Commit author name]
+	email = [youraccount@email.com]
 [apply]
 	whitespace = nowarn
 [color]
@@ -16,7 +16,6 @@
 [diff]
 	algorithm = patience
 [alias]
-    grrraaa = push
     a = add
     aa = add -A :/
     aacm = "!sh -c 'git add -A :/;git commit -m \"$1\"' -"
@@ -57,5 +56,3 @@
     t = tag
     ta = tag -a
     td = tag -d
-	g = git
-
